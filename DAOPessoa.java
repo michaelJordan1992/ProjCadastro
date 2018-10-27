@@ -17,7 +17,7 @@ public class DAOPessoa {
     }
     public void cadastrarPessoa(Pessoa p) throws Exception{
         sql="INSERT INTO PESSOA(ID, NOME, EMAIL)"+
-                "VALUES('"+p.getId()+"',"+p.getNome()+","+p.getEmail()+")";
+                "VALUES("+null+",'"+p.getNome()+"','"+p.getEmail()+"')";
         
         stm.executeUpdate(sql);
        
